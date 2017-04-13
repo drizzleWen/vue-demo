@@ -32,3 +32,67 @@ body{
     color:#5477b2;
     height: 0.5rem;
 }
+
+.swiper-container{
+    margin-top:0.6rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.swiper-container .swiper-slide{
+    width: 6.4rem;
+    float: left;
+    position: relative;
+    
+}
+
+.swiper-container .swiper-slide img{
+    width: 100%;
+    display: block;
+}
+
+.swiper-container .swiper-slide .text-box{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    width: 5.8rem;
+    padding: 0 0.3rem;
+    height: 1.24rem;
+    background: rgba(0,0,0,0.5);
+}
+
+.swiper-container .swiper-slide .text-box h2{
+    font-size: 0.3rem;
+    font-weight: normal;
+    margin-top: 0.22rem;
+    line-height: 100%;
+    margin-bottom: 0.22rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.swiper-container .swiper-slide .text-box p{
+    line-height: 100%;
+}
+
+.swiper-pagination-bullet{
+    background:#fff !important;
+}
+
+.swiper-container .swiper-pagination{
+    text-align: right;
+    width: 96%;
+}
+
+.newsList ul li{
+    border-bottom: 1px dashed #000;
+    padding: .1rem .2rem;
+}
+
+.newsList ul li h2{
+    margin-bottom: .1rem;
+}
+
+

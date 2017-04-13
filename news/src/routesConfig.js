@@ -14,5 +14,8 @@ export default [
     },
     {
         path: './column', component: Column
+    },
+    {
+        path:'/',redirect:'/home'
     }
 ]
