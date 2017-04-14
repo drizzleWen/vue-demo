@@ -4,6 +4,7 @@
 import Home from './component/Home.vue'
 import Follow from './component/Follow.vue'
 import Column from './component/Column.vue'
+import Article from './component/Article.vue'
 
 export default [
     {
@@ -13,7 +14,10 @@ export default [
         path: '/follow', component: Follow
     },
     {
-        path: './column', component: Column
+        path: '/column', component: Column
+    },
+    {
+        path:'/article/:id',component:Article
     },
     {
         path:'/',redirect:'/home'

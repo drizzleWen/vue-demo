@@ -91,6 +91,10 @@ body{
     padding: .1rem .2rem;
 }
 
+.newsList ul li:last-child{
+    padding-bottom: 1rem;
+}
+
 .newsList ul li h2{
     margin-bottom: .1rem;
 }

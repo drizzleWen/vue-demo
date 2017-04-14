@@ -3,8 +3,10 @@ import App from './App.vue'
 import VueRouter from 'vue-router'
 import routes from './routesConfig'
 import axios from 'axios'
+import Vuex from 'vuex'
 
 Vue.use(VueRouter);
+Vue.use(Vuex);
 
 const router=new VueRouter({
     mode:'history',
