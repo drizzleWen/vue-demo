@@ -5,6 +5,14 @@ import routes from './routesConfig'
 import axios from 'axios'
 import Vuex from 'vuex'
 
+import base from './assets/css/base.css'
+import swiper from './assets/css/swiper-3.4.2.min.css'
+import iconfont from './assets/font/iconfont.css'
+import zepto from  './assets/js/zepto.min'
+import font from './assets/js/font'
+import swiperJs from './assets/js/swiper-3.4.2.jquery.min'
+
+
 Vue.use(VueRouter);
 Vue.use(Vuex);
 
