@@ -9,7 +9,6 @@
         </div>
         <div class="cont">
             <h3>{{articleData.title}}</h3>
-            <div class="time"><p>{{}}</p></div>
             <div class="text-box" v-html="articleData.content"></div>
         </div>
     </div>
@@ -38,7 +37,8 @@
             fetchData(id){
                 var _this = this;
                 this.$http.get('../src/data/article.data').then(function (res) {
-                    _this.articleData = res.data
+                    console.log(res);
+                    _this.articleData = res.data[id];
                 }).catch(function (err) {
                     console.log('文章页', err)
                 })
@@ -66,9 +66,10 @@
         width: 6.4rem;
         height: 0.54rem;
         margin: 0 auto;
-        line-height:.54rem;
+        line-height: .54rem;
         padding-top: .1rem;
     }
+
     @font-face {
         font-family: 'iconfont';
         src: url('../assets/font/iconfont.eot');
@@ -88,4 +89,17 @@
         margin-left: .38rem;
     }
 
+    .cont {
+        margin-top: 1rem;
+        padding: .1rem .3rem;
+    }
+
+    .cont .text-box {
+        font-size: 0.25rem;
+    }
+
+    .text-box p {
+        line-height: 0.45rem;
+        margin-bottom: 0.1rem;
+    }
 </style>
