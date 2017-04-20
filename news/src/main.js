@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 import routes from './routesConfig'
 import axios from 'axios'
 import Vuex from 'vuex'
+import stores from './store/store'
 
 import base from './assets/css/base.css'
 import swiper from './assets/css/swiper-3.4.2.min.css'
@@ -39,5 +40,6 @@ Vue.prototype.$http = axios
 new Vue({
   el: '#app',
   router,
+  store:stores,
   render: h => h(App)
 })
