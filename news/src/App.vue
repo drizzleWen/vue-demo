@@ -1,12 +1,12 @@
 <template>
     <div id="app">
-        <NavHeader></NavHeader>
+        <NavHeader v-show="headShow"></NavHeader>
         <transition name="slide-down">
             <keep-alive>
                 <router-view class="router-view"></router-view>
             </keep-alive>
         </transition>
-        <FooterView></FooterView>
+        <FooterView v-show="footerShow"></FooterView>
     </div>
 </template>
 
@@ -43,7 +43,7 @@
                 }
             },
             footerChange(path){
-                if(path.indexOf('article')!=-1){
+                if(path.indexOf('article')==-1){
                     this.$store.dispatch('SHOW_FOOTER_SUCC')
                 }else {
                     this.$store.dispatch('SHOW_FOOTER_FAIL')

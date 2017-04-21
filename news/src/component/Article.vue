@@ -18,6 +18,10 @@
     export default{
         mounted(){
             this.fetchData(this.$route.params.id)
+            if(this.$route.path.indexOf('article')>0){
+
+                this.$store.dispatch('SHOW_FOOTER_FAIL')
+            }
         },
         data(){
             return {
@@ -37,7 +41,6 @@
             fetchData(id){
                 var _this = this;
                 this.$http.get('../src/data/article.data').then(function (res) {
-                    console.log(res);
                     _this.articleData = res.data[id];
                 }).catch(function (err) {
                     console.log('文章页', err)

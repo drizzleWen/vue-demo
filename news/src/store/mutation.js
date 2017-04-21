@@ -22,6 +22,7 @@ const mutations={
     },
     [HEAD_SHOW_FAIL](state){
         state.headShow=false
+        console.log(state.headShow)
     },
     [SHOW_LOADING](state){
         state.loadShow=true
