@@ -9,7 +9,11 @@
         </div>
         <div class="cont">
             <h3>{{articleData.title}}</h3>
+            <div class="time"><p>{{articleData.time | normalTime}}</p></div>
             <div class="text-box" v-html="articleData.content"></div>
+        </div>
+        <div class="footer">
+
         </div>
     </div>
 </template>
@@ -100,6 +104,13 @@
     .cont .text-box {
         font-size: 0.25rem;
     }
+
+    .cont h3{
+        border-bottom: 1px solid #000;
+        font-size: 18px;
+        padding-bottom: .25rem;
+    }
+
 
     .text-box p {
         line-height: 0.45rem;
