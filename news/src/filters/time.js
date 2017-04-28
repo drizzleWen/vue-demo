@@ -8,7 +8,7 @@ export const normalTime=(time)=>{
 
         var y=oDate.getFullYear();
         var m=oDate.getMonth()+1;
-        var d=oDate.getDay();
+        var d=oDate.getDate();
 
         var h=oDate.getHours();
         var mm=oDate.getMinutes();

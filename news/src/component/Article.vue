@@ -13,7 +13,32 @@
             <div class="text-box" v-html="articleData.content"></div>
         </div>
         <div class="footer">
-
+            <ul>
+                <li>
+                    <a href="javascript:void(null)">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-zan-copy"></use>
+                        </svg>
+                    </a>
+                    <span class="num">1</span>
+                </li>
+                <li>
+                    <a href="javascript:void(null)">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-pinglun"></use>
+                        </svg>
+                    </a>
+                    <span class="num">1</span>
+                </li>
+                <li>
+                    <a href="javascript:void(null)">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-xing"></use>
+                        </svg>
+                    </a>
+                    <span class="num">1</span>
+                </li>
+            </ul>
         </div>
     </div>
 </template>
@@ -78,12 +103,12 @@
     }
 
     @font-face {
-        font-family: 'iconfont';
-        src: url('../assets/font/iconfont.eot');
-        src: url('../assets/font/iconfont.eot?#iefix') format('embedded-opentype'),
-        url('../assets/font/iconfont.woff') format('woff'),
-        url('../assets/font/iconfont.ttf') format('truetype'),
-        url('../assets/font/iconfont.svg#iconfont') format('svg');
+        font-family: 'iconfont';  /* project id 276458 */
+        src: url('//at.alicdn.com/t/font_ec22xcv6fuaw0zfr.eot');
+        src: url('//at.alicdn.com/t/font_ec22xcv6fuaw0zfr.eot?#iefix') format('embedded-opentype'),
+        url('//at.alicdn.com/t/font_ec22xcv6fuaw0zfr.woff') format('woff'),
+        url('//at.alicdn.com/t/font_ec22xcv6fuaw0zfr.ttf') format('truetype'),
+        url('//at.alicdn.com/t/font_ec22xcv6fuaw0zfr.svg#iconfont') format('svg');
     }
 
     .iconfont {
@@ -94,6 +119,14 @@
         -webkit-text-stroke-width: 0.2px;
         -moz-osx-font-smoothing: grayscale;
         margin-left: .38rem;
+    }
+
+    .icon {
+        width: 3em; height: 3em;
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;
+        margin-top:.1rem;
     }
 
     .cont {
@@ -115,5 +148,30 @@
     .text-box p {
         line-height: 0.45rem;
         margin-bottom: 0.1rem;
+    }
+
+    .footer{
+        position:fixed;
+        bottom:0rem;
+        height:.8rem;
+        width:100%;
+        background:#fff;
+    }
+
+    .footer ul{
+        display:flex;
+        height:100%;
+    }
+
+    .footer ul li{
+        flex:1;
+        text-align:center;
+        line-height:.8rem;
+    }
+    
+    .footer ul li .num{
+        font-size: .3rem;
+        font-weight: bold;
+        color: red;
     }
 </style>
