@@ -23,6 +23,9 @@ export default [
         path: '/user-info', component: userInfo
     },
     {
+        path:'/user-login',component:userLogin
+    },
+    {
         path:'/article/:id',component:Article
     },
     {
